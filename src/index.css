@@ -1,0 +1,81 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+/* Activer la perspective */
+.card-wrapper {
+  perspective: 1000px;
+}
+
+.card {
+  height: 400px;
+  width: 300px;
+  position: relative;
+  transform-style: preserve-3d;
+  transition: transform 0.3s ease-in-out;
+}
+
+.card-wrapper:hover .card {
+  transform: rotateY(180deg);
+}
+
+.front-card,
+.back-card {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  backface-visibility: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  text-align: center;
+  border-radius: 8px;
+}
+
+.front-card {
+  background-color: white;
+}
+
+.back-card {
+  background-color: rgb(59, 130, 246); /* Blue Tailwind */
+  color: white;
+  transform: rotateY(180deg);
+}
+
+.front-card h1,
+.back-card h1 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.front-card p,
+.back-card p {
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+
+
+html.light {
+  --bg-color: #edf2f7; /* Gris clair */
+  --text-color: #2d3748; /* Noir cassé */
+  --secondary-bg-color: #ffffff; /* Blanc */
+  --secondary-text-color: #4a5568; /* Gris foncé */
+}
+
+html.dark {
+  --bg-color: #1a202c; /* Gris foncé */
+  --text-color: #f7fafc; /* Blanc cassé */
+  --secondary-bg-color: #2d3748; /* Noir cassé */
+  --secondary-text-color: #a0aec0; /* Gris clair */
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
