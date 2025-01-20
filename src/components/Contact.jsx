@@ -1,11 +1,10 @@
-// Contact.jsx
 import React from "react";
 
 function Contact() {
   return (
     <section
       id="contact"
-      className="py-16 bg-gray-100 flex flex-col items-center text-center"
+      className="py-16 flex flex-col items-center text-center"
     >
       <h2 className="text-4xl font-bold mb-8">Contactez-moi</h2>
       <form className="w-full max-w-md bg-white p-6 rounded-lg shadow-lg">

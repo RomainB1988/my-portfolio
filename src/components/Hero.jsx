@@ -5,7 +5,7 @@ function Hero() {
   return (
     <motion.section
       id="hero"
-      className="h-screen flex flex-col justify-center items-center text-center from-purple-700 via-blue-500 to-indigo-900"
+      className="h-screen flex flex-col z-50 justify-center items-center text-center from-purple-700 via-blue-500 to-indigo-900"
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 1 }}
