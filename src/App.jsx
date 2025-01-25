@@ -1,19 +1,19 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import ConnectedDots from "./components/ConnectedDots";
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import About from "./components/About";
 import Projects from "./components/Projects";
 import Skills from "./components/Skills";
+import Contact from "./components/Contact";
 import Footer from "./components/Footer";
-
+import ConnectedDots from "./components/ConnectedDots";
 
 function App() {
   return (
     <Router>
       <div className="relative min-h-screen">
-        <ConnectedDots />
+        <ConnectedDots /> {/* Fond interactif */}
         <div className="relative z-10">
           <Navbar />
           <Routes>
@@ -25,6 +25,7 @@ function App() {
                   <About />
                   <Projects />
                   <Skills />
+                  <Contact />
                   <Footer />
                 </>
               }

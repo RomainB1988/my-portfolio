@@ -7,6 +7,7 @@ const Canvas = styled.canvas`
   left: 0;
   width: 100vw;
   height: 100vh;
+  background-color: #1a1a1a; /* Gris foncé */
   z-index: -1;
 `;
 
@@ -56,22 +57,6 @@ const ConnectedDots = () => {
           const dy = other.y - p.y;
           const distance = Math.sqrt(dx * dx + dy * dy);
 
-          // Mouse interaction
-          if (mouseRef.current.x && mouseRef.current.y) {
-            const mouseDx = mouseRef.current.x - p.x;
-            const mouseDy = mouseRef.current.y - p.y;
-            const mouseDistance = Math.sqrt(mouseDx * mouseDx + mouseDy * mouseDy);
-
-            if (mouseDistance < 150) {
-              ctx.beginPath();
-              ctx.moveTo(p.x, p.y);
-              ctx.lineTo(mouseRef.current.x, mouseRef.current.y);
-              ctx.strokeStyle = `rgba(255, 255, 255, ${1 - mouseDistance / 150})`;
-              ctx.lineWidth = 1;
-              ctx.stroke();
-            }
-          }
-
           if (distance < 100) {
             ctx.beginPath();
             ctx.moveTo(p.x, p.y);
@@ -86,11 +71,6 @@ const ConnectedDots = () => {
       requestAnimationFrame(drawParticles);
     };
 
-    const handleMouseMove = (event) => {
-      mouseRef.current.x = event.clientX;
-      mouseRef.current.y = event.clientY;
-    };
-
     const handleResize = () => {
       canvas.width = window.innerWidth;
       canvas.height = window.innerHeight;
@@ -99,11 +79,9 @@ const ConnectedDots = () => {
 
     createParticles();
     drawParticles();
-    window.addEventListener("mousemove", handleMouseMove);
     window.addEventListener("resize", handleResize);
 
     return () => {
-      window.removeEventListener("mousemove", handleMouseMove);
       window.removeEventListener("resize", handleResize);
     };
   }, []);

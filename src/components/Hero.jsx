@@ -11,7 +11,7 @@ function Hero() {
       transition={{ duration: 1 }}
     >
       <h1 className="text-5xl font-extrabold text-white mb-4">
-        Bienvenue sur mon Portfolio
+        Développeur Full Stack - React & Ruby on Rails
       </h1>
       <p className="text-lg text-gray-300 mb-6">
         Découvrez mes projets et compétences.
