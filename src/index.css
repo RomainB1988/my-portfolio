@@ -38,7 +38,7 @@
 }
 
 .front-card {
-  background-color: white;
+  background-color: rgb(129, 163, 238);
 }
 
 .back-card {
@@ -57,4 +57,10 @@
 .back-card p {
   font-size: 1rem;
   margin-bottom: 10px;
+}
+
+body {
+  margin: 0;
+  background-color: black;
+  overflow-x: hidden; /* Évite les débordements horizontaux */
 }
