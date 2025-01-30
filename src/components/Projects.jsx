@@ -4,8 +4,7 @@ const projects = [
   {
     id: 1,
     title: "Dashboard Météo",
-    description:
-      "Tableau interactif pour consulter la météo et les prévisions.",
+    description: "Tableau interactif pour consulter la météo et les prévisions.",
     technologies: ["HTML", "CSS", "JavaScript", "Openweathermap API"],
     image: "/images/dashboard-meteo.PNG",
     github: "https://github.com/RomainB1988/dashboard-meteo",
@@ -14,8 +13,7 @@ const projects = [
   {
     id: 2,
     title: "Glass Collect",
-    description:
-      "Application web pour localiser les points de collecte et recycler le verre facilement.",
+    description: "Application web pour localiser les points de collecte et recycler le verre facilement.",
     technologies: ["Ruby on Rails", "PostgreSQL", "Stimulus", "Mapbox"],
     image: "/images/Glasscollect.PNG",
     github: "https://github.com/catherine-guyot/glass_collect",
@@ -23,8 +21,7 @@ const projects = [
   {
     id: 3,
     title: "Random Quote Generator",
-    description:
-      "Une application web simple pour générer des citations aléatoires avec un design épuré.",
+    description: "Une application web simple pour générer des citations aléatoires avec un design épuré.",
     technologies: ["HTML", "CSS", "JavaScript"],
     image: "/images/randomquotegenerator.PNG",
     github: "https://github.com/RomainB1988/random-quote-generator",
@@ -33,12 +30,20 @@ const projects = [
   {
     id: 4,
     title: "Galerie d'images",
-    description:
-      "Une galerie interactive permettant de rechercher, enregistrer et explorer des images grâce à une interface moderne.",
+    description: "Une galerie interactive permettant de rechercher, enregistrer et explorer des images grâce à une interface moderne.",
     technologies: ["React.js", "JavaScript", "Unsplash API"],
     image: "/images/galerie-images-thumbnail.PNG",
     github: "https://github.com/RomainB1988/galerie-images",
     demo: "https://romainb1988.github.io/galerie-images/",
+  },
+  {
+    id: 5,
+    title: "To-Do List Avancée",
+    description: "Une application de gestion de tâches avec animations, carte interactive et agenda.",
+    technologies: ["React", "Tailwind", "Framer Motion", "Leaflet", "React Calendar"],
+    image: "/images/todo-list-advanced.PNG",
+    github: "https://github.com/RomainB1988/todo-list-advanced",
+    demo: "https://romainb1988.github.io/todo-list-advanced/",
   },
 ];
 
