@@ -45,6 +45,15 @@ const projects = [
     github: "https://github.com/RomainB1988/todo-list-advanced",
     demo: "https://romainb1988.github.io/todo-list-advanced/",
   },
+  {
+    id: 6,
+    title: "Airbnb Clone",
+    description: "Une application web inspirée d'Airbnb pour publier, rechercher et réserver des logements.",
+    technologies: ["React", "Firebase", "Google Maps API", "Tailwind", "Vite"],
+    image: "/images/airbnb-clone1.PNG",
+    github: "https://github.com/RomainB1988/airbnb-clone",
+    demo: "https://romainb1988.github.io/airbnb-clone/",
+  },
 ];
 
 function Projects() {
