@@ -12,12 +12,12 @@ function About() {
   };
 
   const lines = [
-    "Développeur full-stack formé au Wagon,",
-    "j'ai acquis une solide expertise en Ruby on Rails, JavaScript, et en développement web full-stack.",
-    "Passionné par la création d'applications performantes et intuitives,",
-    "je maîtrise tout le processus, de l'architecture backend à l'intégration front-end.",
-    "En recherche d'une alternance pour consolider mes compétences et contribuer activement à des projets innovants.",
-    "Découvrez mes réalisations et compétences à travers ce portfolio.",
+    "Développeur full-stack en reconversion, passionné par la création d’applications modernes et performantes.",
+    "J’ai acquis une expertise en Ruby on Rails, JavaScript, React et en développement web full-stack.",
+    "À travers mes projets, j’ai développé des compétences en intégration front-end (React, Tailwind CSS),",
+    "en conception et gestion de bases de données (PostgreSQL), ainsi qu’en optimisation et déploiement d’applications web.",
+    "Toujours en quête d’apprentissage, je recherche une alternance pour renforcer mes compétences et contribuer activement à des projets innovants.",
+    "Découvrez mes réalisations à travers ce portfolio.",
   ];
 
   return (
