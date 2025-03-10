@@ -13,7 +13,7 @@ function Hero() {
 
   const elements = [
     {
-      content: "Développeur Full-Stack Ruby on Rails & React.js",
+      content: "Développeur Full-Stack - React",
       style: "text-5xl font-extrabold text-white mb-4",
     },
     {
